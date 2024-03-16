@@ -1,7 +1,10 @@
 {
   "expo": {
-    "name": "talkroom-app",
+    "name": "Talk Room",
     "slug": "talkroom-app",
+    "scheme": [
+      "talkroom"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +24,25 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.icode_mobile.talkroomapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Roboto-Regular.otf",
+            "./assets/fonts/Roboto-Medium.otf",
+            "./assets/fonts/Roboto-Bold.otf",
+            "./assets/fonts/Roboto-Black.otf"
+          ]
+        }
+      ],
+      "expo-router"
+    ]
   }
 }
