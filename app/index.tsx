@@ -1,4 +1,5 @@
 import { useRouter } from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
 
 import {
   ButtonStyled,
@@ -14,6 +15,7 @@ export default function App() {
 
   return (
     <ViewStyled className='flex flex-col flex-1 bg-[#141414] items-center justify-center'>
+      <StatusBar style='light' backgroundColor='#141414' translucent />
       <ImageStyled
         source={require('../assets/TalkRoom.png')}
         className='w-96 h-96'

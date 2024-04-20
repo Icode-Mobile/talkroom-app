@@ -1,9 +1,11 @@
 import { Stack } from 'expo-router/stack';
 import { StatusBar } from 'expo-status-bar';
 
+import UserContextProvider from '../src/context';
+
 export default function RootLayout() {
   return (
-    <>
+    <UserContextProvider>
       <Stack
         screenOptions={{
           headerShown: false,
@@ -12,7 +14,7 @@ export default function RootLayout() {
           },
         }}
       />
-      <StatusBar style='light' backgroundColor='#111' translucent />
-    </>
+      <StatusBar style='light' backgroundColor='#141414' translucent />
+    </UserContextProvider>
   );
 }
